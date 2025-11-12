@@ -12,12 +12,22 @@ Scraper 和 Crawler 的区别
 
 ## 技术栈
 
-可选方案
+### 技术点，适合探索基础功能，不适合生产的工程级别
 
 - selenium
 - puppeteer
 - cheerio
 - request
 - playwright
+
+### 框架
+
+- crawlee (ts/js、 python)
+- scrapy (python)
+
+## 由于我做的前端所以选了 crawlee
+
+优势： 功能强大，支持分布式，支持代理池，支持浏览器模拟等
+缺点：目前过滤缓存与队列只支持 filesystem 和官方的 apify 云存储方案，社区暂时没有 redis 等中间价的方案支持，需要自己实现
 
 ## 目前还没看书
