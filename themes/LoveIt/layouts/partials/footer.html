@@ -1,4 +1,5 @@
 {{- if ne .Site.Params.footer.enable false -}}
+    {{- $siteAuthor := partial "function/site-author.html" . -}}
     <footer class="footer">
         <div class="footer-container">
             {{- /* Custom Content */ -}}
@@ -33,7 +34,7 @@
 
                 {{- /* Author */ -}}
                 {{- if ne .Site.Params.footer.author false -}}
-                    <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $.Site.Author.link | default .Site.Home.RelPermalink }}" target="_blank">{{ .Site.Author.name }}</a></span>
+                    <span class="author" itemprop="copyrightHolder">&nbsp;<a href="{{ $siteAuthor.link }}" target="_blank">{{ $siteAuthor.name | default .Site.Title }}</a></span>
                 {{- end -}}
 
                 {{- /* License */ -}}

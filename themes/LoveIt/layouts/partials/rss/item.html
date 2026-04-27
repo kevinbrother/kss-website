@@ -1,4 +1,5 @@
-{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" .Site.Author.name) -}}
+{{- $siteAuthor := partial "function/site-author.html" .Page -}}
+{{- $params := .Page.Params | merge .Site.Params.Page | merge (dict "author" $siteAuthor.name) -}}
 <item>
     <title>
         {{- .Page.Title -}}

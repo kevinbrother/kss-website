@@ -1,0 +1,6 @@
+{{- $author := .Site.Params.author | default dict -}}
+{{- return dict
+    "name" ($author.name | default "")
+    "email" ($author.email | default "")
+    "link" ($author.link | default .Site.Home.RelPermalink)
+-}}
