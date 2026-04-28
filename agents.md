@@ -1,6 +1,5 @@
-# 这是我的个人博客，或者一些文字的总结，帮我优化成可以对外发布的博客，需要观点清晰，逻辑有条理  
+# Agents
 
 - 使用 superpowers 相关能力的时候，注意
   - 不要做任何的 commit 和 git push，因为我需要人工核验后手动 commit！
   - 如果没有特殊说明也不用使用 worktree，如果要使用 worktree, 则放在项目根目录中
-  - test
